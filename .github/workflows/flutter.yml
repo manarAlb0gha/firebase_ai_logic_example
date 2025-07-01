@@ -4,12 +4,12 @@ on:
   push:
     branches:
       - main
-      - publish_to_firebase
+
 
   pull_request:
     branches:
       - main
-      - publish_to_firebase
+
 
 jobs:
   build:
@@ -30,12 +30,15 @@ jobs:
         with:
           flutter-version: '3.24.4' # Use the required Flutter version
 
-      - name: Install Ruby, Bundler, and Fastlane
+      - name: Install Ruby and Bundler
         run: |
             sudo apt-get update
             sudo apt-get install ruby-full -y
             sudo gem install bundler
-            sudo gem install fastlane
+
+            - name: Install Fastlane Dependencies with Bundler
+              working-directory: android
+              run: bundle install
 
       - name: Install Dependencies
         run: flutter pub get
