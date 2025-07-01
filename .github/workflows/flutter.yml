@@ -30,6 +30,13 @@ jobs:
         with:
           flutter-version: '3.24.4' # Use the required Flutter version
 
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+            ruby-version: "3.3.6"
+            bundler-cache: true
+            working-directory: android
+
       - name: Install Dependencies
         run: flutter pub get
 
