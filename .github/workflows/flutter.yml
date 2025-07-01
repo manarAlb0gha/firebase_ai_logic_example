@@ -32,10 +32,10 @@ jobs:
 
       - name: Install Ruby and Bundler
         run: |
-            sudo apt-get update
-            sudo apt-get install ruby-full -y
-            sudo gem install bundler
-            sudo gem install fastlane
+         sudo apt-get update
+         sudo apt-get install ruby-full -y
+         sudo gem install fastlane
+         sudo gem install fastlane-plugin-firebase_app_distribution
 
       - name: Install Dependencies
         run: flutter pub get
