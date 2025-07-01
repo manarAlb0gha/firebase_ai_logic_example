@@ -20,7 +20,7 @@ class AppState with ChangeNotifier {
 
   // Increase font size factor
   void increaseFontSizeFactor() {
-    fontSizeFactor += .06;
+    fontSizeFactor += .05;
     notifyListeners();
   }
 
