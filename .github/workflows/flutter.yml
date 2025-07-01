@@ -30,12 +30,12 @@ jobs:
         with:
           flutter-version: '3.24.4' # Use the required Flutter version
 
-      - name: Install Ruby and Bundler
+      - name: Install Ruby, Bundler, and Fastlane
         run: |
-         sudo apt-get update
-         sudo apt-get install ruby-full -y
-         sudo gem install fastlane
-         sudo gem install fastlane-plugin-firebase_app_distribution
+            sudo apt-get update
+            sudo apt-get install ruby-full -y
+            sudo gem install bundler
+            sudo gem install fastlane
 
       - name: Install Dependencies
         run: flutter pub get
