@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028080954876",
+    "project_id": "fir-ai-logic",
+    "storage_bucket": "fir-ai-logic.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028080954876:android:244c7bcb7121026ac05679",
+        "android_client_info": {
+          "package_name": "com.example.firebase_ai_logic_example"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj1z2O09srqUssW66PN23fHsm8mprYr6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
