@@ -36,9 +36,9 @@ jobs:
             sudo apt-get install ruby-full -y
             sudo gem install bundler
 
-            - name: Install Fastlane Dependencies with Bundler
-              working-directory: android
-              run: bundle install
+      - name: Install Fastlane Dependencies with Bundler
+        working-directory: android
+        run: bundle install
 
       - name: Install Dependencies
         run: flutter pub get
